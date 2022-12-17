@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+   <style>
+
+    div{
+        margin: auto;
+        margin-top: 100px;
+        background-color: aqua;
+        color: blueviolet;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        animation: play 1s linear infinite;
+        transition: 0.3s ease-out;
+        
+    }
+    @keyframes play{
+        0%{
+            box-shadow: 0 0 0 0px rgb(145, 145, 145) , 0 0 0 10px rgb(183, 183, 183) , 0 0 0 20px rgb(209, 209, 209) ;
+        }
+        100%{
+            box-shadow: 0 0 0 10px rgb(145, 145, 145) , 0 0 0 20px rgb(183, 183, 183) , 0 0 0 30px rgb(209, 209, 209) ;
+        }
+    }
+
+.fa-play{
+    padding-top: 9px;
+}
+  
+
+  
+
+   </style>
+    
+</head>
+<body>
+    <div class="play-btn">
+    <span class="fa fa-play" ></span>
+    </div>  
+</body>
+</html>
