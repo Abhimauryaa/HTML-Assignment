@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="formValidation.js"></script>
+    <style>
+      form {
+        border: 2px solid black;
+        width: 50%;
+        margin: auto;
+        background-color: floralwhite;
+      }
+      h1{
+        text-align: center;
+      }
+      .row {
+        display: flex;
+        gap: 60px;
+        padding: 5px;
+      }
+      .col {
+        flex: 1;
+        text-align: right;
+      }
+      .col-2 {
+        flex: 2;
+      }
+      .col-3 {
+        flex: 1;
+        text-align: left;
+      }
+      span {
+        color: red;
+      }
+      input[type="text"] {
+        height: 20px;
+        width: 250px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        height: 25px;
+        width: 50%;
+        font-weight: 700;
+      }
+    
+    </style>
+  </head>
+  <body>
+      <form action="" method="get" name="form1">
+          <h1>Registration for Job </h1>
+          <!-- first name -->
+      <div class="row">
+        <div class="col">First name</div>
+        <div class="col-2">
+          <input type="text" name="" id="fname" placeholder="enter first name"/>
+        </div>
+        <div class="col-3">
+          <span id="fmsg"></span>
+        </div>
+      </div>
+
+      <!-- Middle name -->
+      
+      <div class="row">
+        <div class="col">Middle name</div>
+        <div class="col-2">
+          <input type="text" name="" id="mname" placeholder="enter middle name"/>
+        </div>
+        <div class="col-3">
+          <span id="mmsg"></span>
+        </div>
+      </div>
+
+      <!-- last name -->
+      <div class="row">
+        <div class="col">Last name</div>
+        <div class="col-2">
+          <input type="text" name="" id="lname" placeholder="Enter Last Name"/>
+        </div>
+        <div class="col-3">
+          <span id="lmsg"></span>
+        </div>
+      </div>
+
+      <!-- Address -->
+
+      <div class="row">
+        <div class="col">Address</div>
+        <div class="col-2">
+          <textarea name="" id="addr" cols="30" rows="3" maxlength="100" minlength="20"></textarea>
+        </div>
+        <div class="col-3">
+          <span id="addmsg"></span>
+        </div>
+      </div>
+      
+      <!-- Date of Birth -->
+      <div class="row">
+        <div class="col">Date of Birth</div>
+        <div class="col-2">
+          <input type="date" name="" id="dob"/>
+        </div>
+        <div class="col-3">
+          <span id="dobmsg"></span>
+        </div>
+      </div>
+      
+      <!-- gender -->
+
+      <div class="row">
+        <div class="col">Gender</div>
+        <div class="col-2">
+          <input type="radio" name="gen" id="male" />Male
+          <input type="radio" name="gen" id="female" />Female
+        </div>
+        <div class="col-3">
+          <span id="genmsg"></span>
+        </div>
+      </div>
+
+
+      <!-- Experience -->
+      
+      <div class="row">
+        <div class="col">Experience</div>
+        <div class="col-2">
+          <select name="experience" id="exp" />
+            <option value="-1">----select----</option>
+                <option value="">1 year</option>
+                <option value="">2 year</option>
+                <option value="">5 year</option>
+                <option value="">12th</option>
+                <option value="">Graduate</option>
+          </select>
+        </div>
+
+          <div class="col-3">
+            <span id="expmsg"></span>
+        </div>
+      
+      </div>
+
+      <!-- Mobile no -->
+    
+      <div class="row">
+        <div class="col">Mobile No</div>
+        <div class="col-2">
+          <input type="text" name="" id="mno" maxlength="10" placeholder="Enter Mobile No"/>
+        </div>
+        <div class="col-3">
+          <span id="mnomsg"></span>
+        </div>
+      </div>
+
+      <!-- Email -->
+
+      <div class="row">
+        <div class="col">Email</div>
+        <div class="col-2">
+          <input type="text" name="" id="mail" placeholder="Enter Email"/>
+        </div>
+        <div class="col-3">
+          <span id="mailmsg"></span>
+        </div>
+      </div>
+
+<!-- Password -->
+      <div class="row">
+        <div class="col">Password</div>
+        <div class="col-2">
+          <input type="password" name="" id="pass" placeholder="Enter Password"/>
+        </div>
+        <div class="col-3">
+          <span id="passmsg"></span>
+        </div>
+      </div>
+
+
+
+      <!-- button -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-2">
+          <input
+            type="submit"
+            name=""
+            id=""
+            value="Register"
+            onclick="return form_valid()"
+          />
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </form>
+  </body>
+</html>
