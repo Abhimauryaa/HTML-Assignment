@@ -1,0 +1,21 @@
+1. What is JavaScript Object?
+Ans: A JavaScript object is a fundamental data structure in JavaScript, allowing you to store and manipulate data in a key-value pair format. Objects are enclosed in curly braces ‘{}’ and consist of properties and methods.
+
+Example:
+
+Const person = {
+	firstName: “Amar”,
+	lastName: “patel”,
+	age: 30,
+	isStudent: false,
+	sayHello: function() {
+		console.log(“Hello!”);
+	}
+};
+In this example, ‘person’ is an object with properties like ‘firstName’, ‘lastName’, ‘age’ and ‘isStudent’.
+It also ha a method ‘sayHello’, which is a function attached to the object. You can access properties and methods of an object using dot notation, like ‘person.fisrtName’ or ‘person.sayHello()’.
+
+
+
+
+
